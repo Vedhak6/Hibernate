@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.password">root</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/movie</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+		<property name="show_sql">true</property>
+		<property name="format_sql">true</property>
+
+		<property name="c3p0.max_size">15</property>
+		<property name="c3p0.min_size">10</property>
+		<property name="c3p0.max_statements">10</property>
+		<property name="c3p0.timeout">45</property>
+		<property name="c3p0.acquire_increment">5</property>
+
+		<mapping class="com.xworkz.punith.dto.PunithDTO" />
+	</session-factory>
+</hibernate-configuration>
+
+
+INFO: Initializing c3p0 pool...
+com.mchange.v2.c3p0.PoolBackedDataSource@d300b008 [
+connectionPoolDataSource ->
+com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@c5d1684e [
+acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay ->
+1000, autoCommitOnClose -> false, automaticTestTable -> null,
+breakAfterAcquireFailure -> false, checkoutTimeout -> 0,
+connectionCustomizerClassName -> null, connectionTesterClassName ->
+com.mchange.v2.c3p0.impl.DefaultConnectionTester,
+contextClassLoaderSource -> caller, debugUnreturnedConnectionStackTraces
+-> false, factoryClassLocation -> null,
+forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins ->
+false, identityToken -> 1hge13baflutk38k5rmy2|1a45193b,
+idleConnectionTestPeriod -> 0, initialPoolSize -> 10,
+maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime ->
+45, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements
+-> 10, maxStatementsPerConnection -> 0, minPoolSize -> 10,
+nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@a362d789
+[ description -> null, driverClass -> null, factoryClassLocation ->
+null, forceUseNamedDriverClass -> false, identityToken ->
+1hge13baflutk38k5rmy2|616fe72b, jdbcUrl ->
+jdbc:mysql://localhost:3306/movie, properties -> {user=******,
+password=******} ], preferredTestQuery -> null, privilegeSpawnedThreads
+-> false, propertyCycle -> 0, statementCacheNumDeferredCloseThreads ->
+0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false,
+unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies ->
+false; userOverrides: {} ], dataSourceName -> null, extensions -> {},
+factoryClassLocation -> null, identityToken ->
+1hge13baflutk38k5rmy2|7bb6ab3a, numHelperThreads -> 3 ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
